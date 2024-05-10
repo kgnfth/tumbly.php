@@ -271,7 +271,7 @@ class Client
      *
      * @return array the response array
      */
-    public function getBlogInfo($blogName, $options = null)
+    public function getNotes($blogName, $options = null)
     {
         $path = $this->blogPath($blogName, '/notes');
         if ($options && isset($options['mode'])) {
