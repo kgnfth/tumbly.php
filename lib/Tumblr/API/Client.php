@@ -264,6 +264,25 @@ class Client
     }
 
     /**
+     * Get notes for a specific Post
+     *
+     * @param string $blogName the name of the blog
+     * @param array  $options  the options for the call
+     *
+     * @return array the response array
+     */
+    public function getBlogInfo($blogName, $options = null)
+    {
+        $path = $this->blogPath($blogName, '/notes');
+        if ($options && isset($options['mode'])) {
+            $path .= '/' . $options['mode'];
+            unset($options['mode']);
+        }
+
+        return $this->getRequest($path, $options, true);
+    }
+
+    /**
      * Get blog avatar URL
      *
      * @param string $blogName the nae of the blog to look up

@@ -1,21 +1,18 @@
 {
-  "name": "tumblr/tumblr",
+  "name": "kgnfth/tumbly",
   "type": "library",
-  "description": "Official Tumblr PHP Client",
+  "description": "Fuck The Official Tumblr PHP Client",
   "keywords": [
     "tumblr",
     "api",
     "sdk",
     "gif"
   ],
-  "homepage": "https://github.com/tumblr/tumblr.php",
+  "homepage": "https://github.com/kgnfth/tumbly.php",
   "license": "Apache-2.0",
   "authors": [
     {
-      "name": "John Crepezzi",
-      "email": "john.crepezzi@gmail.com",
-      "homepage": "https://github.com/seejohnrun",
-      "role": "developer"
+      "name": "Fuck John Crepezzi"
     }
   ],
   "require": {
