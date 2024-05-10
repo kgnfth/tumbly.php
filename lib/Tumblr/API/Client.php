@@ -274,9 +274,9 @@ class Client
     public function getNotes($blogName, $options = null)
     {
         $path = $this->blogPath($blogName, '/notes');
-        if ($options && isset($options['mode'])) {
-            $path .= '/' . $options['mode'];
-            unset($options['mode']);
+        if ($options && isset($options['type'])) {
+            $path .= '/' . $options['type'];
+            unset($options['type']);
         }
 
         return $this->getRequest($path, $options, true);
